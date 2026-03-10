@@ -20,21 +20,16 @@ const featuredProjects = [
     description:
       "Plataforma educativa para ensenar inteligencia artificial en el aula de forma comprensible y creativa.",
     tag: "IA educativa",
-    url: "https://learningml.org",
+    projectUrl: "https://learningml.org",
+    sourceUrls: ["https://github.com/LearningML-Education"],
   },
   {
     name: "EchidnaML",
     description:
       "Software y ecosistema para robotica educativa y experimentacion con programacion creativa.",
     tag: "Robotica",
-    url: "#",
-  },
-  {
-    name: "LearningML Editor",
-    description:
-      "Editor visual basado en web components para crear experiencias de IA educativa.",
-    tag: "Software",
-    url: "#",
+    projectUrl: "https://echidna.es",
+    sourceUrls: ["https://github.com/EchidnaEducacion"],
   },
 ];
 
@@ -681,11 +676,10 @@ export default function JuandaPortfolioPage() {
                 selected work
               </div>
               <h2 className="mt-3 mb-6 text-3xl font-semibold">Proyectos destacados</h2>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2">
                 {featuredProjects.map((project) => (
-                  <a
+                  <div
                     key={project.name}
-                    href={project.url}
                     className={`rounded-[1.25rem] border p-6 transition duration-300 hover:-translate-y-1 ${cardSurface} ${
                       theme === "dark" ? "hover:border-emerald-400/40" : "hover:border-slate-500"
                     }`}
@@ -697,7 +691,37 @@ export default function JuandaPortfolioPage() {
                     <p className={`mt-3 text-sm leading-7 ${softText}`}>
                       {project.description}
                     </p>
-                  </a>
+
+                    <div className="mt-5 flex flex-wrap gap-3 text-sm">
+                      <a
+                        href={project.projectUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`inline-flex items-center justify-center rounded-md border px-3 py-1.5 ${
+                          theme === "dark"
+                            ? "border-emerald-500/20 bg-emerald-500/10 text-emerald-300"
+                            : "border-slate-300 bg-slate-50 text-slate-700"
+                        }`}
+                      >
+                        proyecto
+                      </a>
+                      {project.sourceUrls.map((sourceUrl, index) => (
+                        <a
+                          key={sourceUrl}
+                          href={sourceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={`inline-flex items-center justify-center rounded-md border px-3 py-1.5 ${
+                            theme === "dark"
+                              ? "border-emerald-500/20 bg-black/40 text-emerald-200"
+                              : "border-slate-300 bg-white text-slate-700"
+                          }`}
+                        >
+                          {project.sourceUrls.length === 1 ? "codigo fuente" : `codigo ${index + 1}`}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </section>
