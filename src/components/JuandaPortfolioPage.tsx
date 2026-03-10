@@ -570,14 +570,14 @@ export default function JuandaPortfolioPage() {
 
                   <div className="mt-8 flex flex-wrap gap-3 text-sm">
                     <a
-                      href="#proyectos"
+                      href="#featured"
                       className={`rounded-md border px-4 py-2.5 transition hover:-translate-y-0.5 ${
                         theme === "dark"
                           ? "border-emerald-500/20 bg-emerald-500/10 text-emerald-200"
                           : "border-slate-300 bg-slate-900 text-white"
                       }`}
                     >
-                      ./projects
+                      ./featured
                     </a>
                     <a
                       href="#now"
@@ -587,7 +587,27 @@ export default function JuandaPortfolioPage() {
                           : "border-slate-300 bg-white"
                       }`}
                     >
-                      ./now
+                      ./focus
+                    </a>
+                    <a
+                      href="#ideas"
+                      className={`rounded-md border px-4 py-2.5 transition hover:-translate-y-0.5 ${
+                        theme === "dark"
+                          ? "border-emerald-500/20 bg-black/30"
+                          : "border-slate-300 bg-white"
+                      }`}
+                    >
+                      ./ideas
+                    </a>
+                    <a
+                      href="#experiments"
+                      className={`rounded-md border px-4 py-2.5 transition hover:-translate-y-0.5 ${
+                        theme === "dark"
+                          ? "border-emerald-500/20 bg-black/30"
+                          : "border-slate-300 bg-white"
+                      }`}
+                    >
+                      ./experiments
                     </a>
                     <a
                       href="/cv"
@@ -598,16 +618,6 @@ export default function JuandaPortfolioPage() {
                       }`}
                     >
                       ./cv
-                    </a>
-                    <a
-                      href="https://github.com/juanda"
-                      className={`rounded-md border px-4 py-2.5 transition hover:-translate-y-0.5 ${
-                        theme === "dark"
-                          ? "border-emerald-500/20 bg-black/30"
-                          : "border-slate-300 bg-white"
-                      }`}
-                    >
-                      github
                     </a>
                   </div>
                 </div>
@@ -663,7 +673,7 @@ export default function JuandaPortfolioPage() {
         <Reveal delay={80} className="mt-20">
           <TerminalCard theme={theme}>
             <WindowHeader theme={theme} title="juanda@portfolio:~/featured" />
-            <section className="p-8 md:p-10">
+            <section id="featured" className="p-8 md:p-10">
               <div className="mb-3">
                 <ShellPrompt theme={theme} path="~/featured" command="ls projects" />
               </div>
@@ -744,7 +754,7 @@ export default function JuandaPortfolioPage() {
         <Reveal delay={220} className="mt-20">
           <TerminalCard theme={theme}>
             <WindowHeader theme={theme} title="juanda@portfolio:~/ideas" />
-            <section className="p-8 md:p-10">
+            <section id="ideas" className="p-8 md:p-10">
               <div className="mb-3">
                 <ShellPrompt theme={theme} path="~/ideas" command="grep -i reflections notes.md" />
               </div>
@@ -771,7 +781,7 @@ export default function JuandaPortfolioPage() {
         <Reveal delay={280} className="mt-20">
           <TerminalCard theme={theme}>
             <WindowHeader theme={theme} title="juanda@portfolio:~/repos" />
-            <section id="proyectos" className="p-8 md:p-10">
+            <section id="experiments" className="p-8 md:p-10">
               <div className="mb-3">
                 <ShellPrompt theme={theme} path="~/repos" command="ls -lt github" />
               </div>
