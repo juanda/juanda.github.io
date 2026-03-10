@@ -1,0 +1,450 @@
+---
+import "../styles/global.css";
+
+const profile = {
+  name: "Juan David Rodriguez Garcia",
+  headline:
+    "Profesor de ensenanza secundaria, desarrollador de software y creador de proyectos de tecnologia educativa e inteligencia artificial.",
+  summary:
+    "Perfil hibrido entre educacion, ingenieria de software, infraestructura y diseno de producto educativo. Combino experiencia docente, desarrollo web full stack, administracion de sistemas, CI/CD, identidad federada y proyectos de inteligencia artificial aplicada al aula.",
+  location: "Soto del Real, Madrid, Espana",
+  phone: "(+34) 652 965 963",
+  email: "juanda@juandarodriguez.es",
+  website: "https://juandarodriguez.es",
+  linkedin: "https://www.linkedin.com/in/juandarodriguez/",
+  github: "https://github.com/juanda",
+  researchgate: "https://www.researchgate.net/profile/Juan_Rodriguez402",
+  courses: "http://juandarodriguez.es/cursos.html",
+  projects: "http://juandarodriguez.es/desarrollos.html",
+};
+
+const experience = [
+  {
+    role: "Jefe de Servicio de Proyectos de Desarrollo y Recursos Educativos",
+    org: "Area de Digitalizacion e Inteligencia Artificial, INTEF",
+    period: "Septiembre 2025 - actualidad",
+    detail:
+      "Responsable del servicio en el area de digitalizacion e inteligencia artificial dentro del INTEF.",
+  },
+  {
+    role: "Asesor Tecnico Docente",
+    org: "Instituto Nacional de Tecnologias Educativas y Formacion del Profesorado (INTEF)",
+    period: "Septiembre 2020 - agosto 2025",
+    detail:
+      "Servicio de Medios Tecnologicos. Administracion de sistemas, diseno e implantacion de procesos de integracion y despliegue continuo, infraestructuras con contenedores y Kubernetes, y desarrollo y mantenimiento de servicios de identidad federada.",
+  },
+  {
+    role: "Asesor Tecnico Docente",
+    org: "Instituto Nacional de Tecnologias Educativas y Formacion del Profesorado (INTEF)",
+    period: "Septiembre 2018 - agosto 2020",
+    detail:
+      "Area de experimentacion en el aula. Promocion del pensamiento computacional, la programacion, la robotica y la inteligencia artificial en el aula. Desarrollo de recursos educativos y coordinacion de los proyectos Escuela de Pensamiento Computacional 2018-19 y Escuela de Pensamiento Computacional e Inteligencia Artificial 2019-20.",
+  },
+  {
+    role: "Desarrollo de software, administracion de sistemas y coordinacion tecnica",
+    org: "INTEF",
+    period: "Enero 2007 - agosto 2018",
+    detail:
+      "Servicio de Medios Tecnologicos. Desarrollo y mantenimiento de software, administracion de sistemas, coordinacion de equipos de desarrollo y formacion de becarios.",
+  },
+  {
+    role: "Creador y desarrollador",
+    org: "LearningML",
+    period: "Marzo 2019 - actualidad",
+    detail:
+      "Creacion de LearningML, plataforma para la ensenanza de machine learning en edades tempranas. Diseno del producto, desarrollo tecnico, validacion educativa y difusion del proyecto en formacion docente e investigacion.",
+  },
+  {
+    role: "Colaborador en desarrollo de software educativo",
+    org: "Echidna Educacion",
+    period: "Etapa actual",
+    detail:
+      "Creacion de una extension de Scratch para la programacion de la placa educativa EchidnaShield y colaboracion en lineas de robotica educativa y software abierto.",
+  },
+  {
+    role: "Profesor del modulo Acceso a datos",
+    org: "CEU Instituto Superior de Estudios Profesionales",
+    period: "Enero 2012 - 2014",
+    detail:
+      "Docencia en el ciclo formativo de grado superior de Desarrollo de Aplicaciones Multiplataforma.",
+  },
+  {
+    role: "Analista y desarrollador de software",
+    org: "Colaboraciones con varias empresas",
+    period: "Enero 2012 - actualidad",
+    detail:
+      "Desarrollo de software para aplicaciones web, moviles e IoT, junto con diseno e imparticion de formacion tecnica especializada.",
+  },
+  {
+    role: "Profesor de Tecnologia e Informatica",
+    org: "IES Blas Infante, El Viso del Alcor",
+    period: "Septiembre 2006 - diciembre 2007",
+    detail:
+      "Docencia en secundaria. Durante este periodo ejerci como jefe de estudios.",
+  },
+  {
+    role: "Profesor de Tecnologia e Informatica",
+    org: "IES Blas Infante, Villaverde del Rio",
+    period: "Septiembre 2001 - agosto 2006",
+    detail:
+      "Docencia en secundaria. Entre los cursos 2002/03 y 2005/06 ejerci como secretario.",
+  },
+  {
+    role: "Profesor de Tecnologia",
+    org: "IES Murillo, Sevilla",
+    period: "Septiembre 2000 - agosto 2001",
+    detail:
+      "Docencia en ensenanza secundaria en el area de tecnologia.",
+  },
+  {
+    role: "Desarrollador de software",
+    org: "Al-Andalus Educacional S.L.",
+    period: "Diciembre 1999 - agosto 2000",
+    detail:
+      "Desarrollo de aplicaciones de gestion para confeccion de pedidos y elaboracion de la web de la empresa.",
+  },
+  {
+    role: "Becario FPI",
+    org: "Universidad de Sevilla",
+    period: "Mayo 1997 - noviembre 1999",
+    detail:
+      "Trabajo de investigacion en electronica y electromagnetismo, desarrollo de software CAD simbolico y librerias en C++ dentro del proyecto europeo ESPRIT IV 21812 AMADEUS, ademas de docencia practica en asignaturas de Fisica Electronica.",
+  },
+  {
+    role: "Becario",
+    org: "Instituto de Astrofisica de Sevilla / IAC, La Laguna",
+    period: "Agosto 1995 - octubre 1995",
+    detail:
+      "Puesta a punto de un espectrofotometro para caracterizacion optica de lentes y filtros.",
+  },
+  {
+    role: "Becario de colaboracion",
+    org: "Universidad de Sevilla",
+    period: "Septiembre 1994 - junio 1995",
+    detail:
+      "Beca de colaboracion en el departamento de Fisica Atomica, Molecular y Nuclear.",
+  },
+];
+
+const projects = [
+  {
+    name: "LearningML",
+    label: "Producto educativo",
+    text:
+      "Plataforma para ensenar inteligencia artificial y machine learning mediante actividades practicas. Incluye trabajo de investigacion, validacion educativa y recursos para aula.",
+  },
+  {
+    name: "Infraestructura INTEF",
+    label: "Sistemas e identidad",
+    text:
+      "Trabajo en administracion de sistemas, despliegue continuo, contenedores, Kubernetes y servicios de identidad federada para entornos institucionales.",
+  },
+  {
+    name: "EchidnaShield + Scratch",
+    label: "Robotica educativa",
+    text:
+      "Extension para programar hardware educativo desde Scratch en colaboracion con Echidna Educacion.",
+  },
+];
+
+const training = [
+  {
+    title: "Licenciado en Ciencias Fisicas",
+    org: "Facultad de Fisica, Universidad de Sevilla",
+    period: "Septiembre 1990 - junio 1995",
+  },
+  {
+    title: "Certificado de Aptitud Pedagogica",
+    org: "Instituto de Ciencias de la Educacion de Sevilla",
+    period: "1996 - 1997",
+  },
+  {
+    title: "Certificado de Ingles equivalente B1",
+    org: "Escuela de Idiomas de Sevilla",
+    period: "2004 - 2006",
+  },
+];
+
+const highlights = [
+  "Profesor de ensenanza secundaria de Tecnologia.",
+  "Experiencia en desarrollo de software, administracion de sistemas, CI/CD e infraestructuras con contenedores y Kubernetes.",
+  "Autor y principal impulsor de LearningML.",
+  "Experiencia en pensamiento computacional, robotica educativa e inteligencia artificial en el aula.",
+  "Trayectoria en formacion tecnica para profesorado, empresas e instituciones.",
+];
+
+const skills = [
+  "Tecnologia educativa",
+  "Inteligencia artificial para educacion",
+  "Desarrollo web y aplicaciones frontend",
+  "JavaScript y ecosistema web",
+  "Arquitectura de aplicaciones y componentes reutilizables",
+  "Integracion de frontend, backend y servicios externos",
+  "Administracion de sistemas",
+  "CI/CD e infraestructura",
+  "Kubernetes y contenedores",
+  "Docker, GitLab Runner y SonarQube",
+  "Identidad federada",
+  "Automatizacion, trazabilidad y despliegues reproducibles",
+  "Diseno de herramientas para aula",
+  "Documentacion y divulgacion tecnica",
+  "Formacion de profesorado",
+  "Software y hardware open source",
+];
+
+const engineeringProfile = [
+  "Experiencia en diseno y construccion de aplicaciones web y herramientas digitales completas, desde la arquitectura hasta el despliegue.",
+  "Trabajo habitual con JavaScript, HTML, CSS, Python, PHP, Java y C/C++, desarrollando frontend, backend y componentes reutilizables.",
+  "Implantacion de pipelines de integracion y despliegue continuo con foco en calidad de codigo, analisis estatico, auditabilidad y sostenibilidad operativa.",
+  "Experiencia en infraestructuras institucionales y open source con contenedores, automatizacion, observabilidad y procedimientos de aceptacion de software.",
+];
+
+const trainingHighlights = [
+  "Ponente en cursos de formacion del profesorado sobre aprendizaje automatico, inteligencia artificial y pensamiento computacional en CTIF Madrid Sur y CTIF Madrid Oeste.",
+  "Tutor del curso a distancia Programacion de simulaciones educativas con Snap! en el Centro de Profesores de Castilleja de la Cuesta durante los cursos 2020-21, 2021-22 y 2022-23.",
+  "Ponente en el curso Introduccion a la Inteligencia Artificial y al Machine Learning para la Escuela para Fundacion Cruzando, Chile.",
+  "Participacion docente en el curso del INTEF y la UIMP Pensamiento Computacional e Inteligencia Artificial: de cero a cien en un verano, julio de 2019.",
+  "Autor e instructor de cursos sobre Angular, JavaScript, Electron, Vagrant, Git, PHP/Symfony y Subversion para distintas entidades de formacion.",
+];
+
+const certifications = [
+  {
+    title: "Functional Programming Principles in Scala",
+    meta: "Junio 2014 - actualidad | Licencia 972351",
+  },
+  {
+    title: "Zend Certified Engineer",
+    meta: "Enero 2013 - actualidad | Licencia ZEND021038",
+  },
+];
+
+const languages = [
+  "Espanol: competencia nativa",
+  "Ingles: competencia basica profesional",
+];
+
+const publications = [
+  "LearningML: A Tool to Foster Computational Thinking Skills Through Practical Artificial Intelligence Projects. Revista de Educacion a Distancia, 20(63), 2020.",
+  "Developing Computational Thinking at School with Machine Learning: An exploration. 21st International Symposium on Computers in Education (SIIE), 2019.",
+  "Not the same: a text network analysis on computational thinking definitions to study its relationship with computer programming. Revista Interuniversitaria de Investigacion en Tecnologia Educativa, 2019.",
+  "Desarrollo de Aplicaciones web con Symfony2. NIPO 030-12-324-1, 2015.",
+  "Identidad Federada con SymfonITE. Jornadas Tecnicas RedIRIS, Valladolid, 2011.",
+  "O. Guerra, J.D. Rodriguez-Garcia, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. A Circuit Reduction Technique for Approximated Symbolic Analysis of Large Analogue Circuits. DCIS'98, Madrid, noviembre de 1998.",
+  "J.D. Rodriguez-Garcia, O. Guerra, F.V. Fernandez y A. Rodriguez-Vazquez. Symbolic Pole/Zero Extraction Through Dedicated SBG/SDG Techniques. SMACD'98, Kaiserlautern, octubre de 1998.",
+  "J.D. Rodriguez-Garcia, O. Guerra, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. A New Simplification Before and During Generation Algorithm. SMACD'98, Kaiserlautern, octubre de 1998.",
+  "O. Guerra, J.D. Rodriguez-Garcia, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. True Hierarchical Symbolic Analysis of Large-Scale Analog Integrated Circuits. SMACD'98, Kaiserlautern, octubre de 1998.",
+  "O. Guerra, J.D. Rodriguez-Garcia, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. A Simplification Before and During Generation Metodology for Symbolic Large-Circuit Analysis. ICECS'98, Lisboa, septiembre de 1998.",
+  "F.V. Fernandez, O. Guerra, J.D. Rodriguez-Garcia y A. Rodriguez-Vazquez. Symbolic Analysis of Large Analog Integrated Circuits: The Numerical Reference Generation Problem. IEEE Transactions on Circuits and Systems Part I, vol. 45, n. 10, octubre de 1998.",
+  "F.V. Fernandez, O. Guerra, J.D. Rodriguez-Garcia y A. Rodriguez-Vazquez. Corrections to Symbolic Analysis of Large Analog Integrated Circuits: The Numerical Reference Generation Problem. IEEE Transactions on Circuits and Systems Part II, vol. 46, n. 4, abril de 1999.",
+  "J.D. Rodriguez-Garcia, O. Guerra, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. Error control in simplification before generation algorithms for symbolic analysis of large analogue circuits. Electronics Letters, vol. 35, n. 4, febrero de 1999.",
+  "O. Guerra, J.D. Rodriguez-Garcia, F.V. Fernandez, R. Dominguez-Castro y A. Rodriguez-Vazquez. On the validity Region of Behavioral Models. ECCTD'99, Stresa, agosto-septiembre de 1999.",
+  "J.D. Rodriguez-Garcia, O. Guerra, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. A tool for complete small-signal analytical modeling of large analog circuits. IWMICA'99, Puerto Vallarta, julio de 1999.",
+  "O. Guerra, J.D. Rodriguez-Garcia, F.V. Fernandez y A. Rodriguez-Vazquez. A novel error-controlled hierarchical approach for the symbolic analysis of large analog integrated circuits. DCIS'99.",
+  "J.D. Rodriguez-Garcia, O. Guerra, F.V. Fernandez y A. Rodriguez-Vazquez. A Symbolic Pole/Zero Extraction Methodology Based on Analysis of Circuit Time-Constant. DCIS'99.",
+  "O. Guerra, J.D. Rodriguez-Garcia, E. Roca, F.V. Fernandez y A. Rodriguez-Vazquez. An Error-Controlled Methodology for Aproximated Hierarchical Symbolic Analysis. ISCAS 2000.",
+];
+
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | Juan David Rodriguez Garcia</title>
+    <meta
+      name="description"
+      content="Curriculum vitae de Juan David Rodriguez Garcia: educacion, software, sistemas, IA y proyectos digitales."
+    />
+  </head>
+  <body class="min-h-screen bg-[#f3efe5] text-slate-900">
+    <div class="mx-auto max-w-6xl px-6 py-10 md:px-8 print:max-w-none print:px-0 print:py-0">
+      <header class="overflow-hidden rounded-[2rem] border border-slate-300 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.08)] print:rounded-none print:border-0 print:shadow-none">
+        <div class="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
+          <section class="bg-[linear-gradient(135deg,#0b1720,#102f2d_58%,#18574c)] px-8 py-10 text-white md:px-10 md:py-12">
+            <div class="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.28em] text-emerald-100">
+              Curriculum Vitae
+            </div>
+            <h1 class="mt-6 max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
+              {profile.name}
+            </h1>
+            <p class="mt-5 max-w-3xl text-lg leading-8 text-emerald-50/90">
+              {profile.headline}
+            </p>
+            <p class="mt-6 max-w-3xl text-sm leading-7 text-emerald-100/75 md:text-base">
+              {profile.summary}
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3 text-sm">
+              <a
+                href={profile.linkedin}
+                class="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-white transition hover:bg-white/16"
+              >
+                LinkedIn
+              </a>
+              <a
+                href={profile.github}
+                class="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-white transition hover:bg-white/16"
+              >
+                GitHub
+              </a>
+              <a
+                href={profile.website}
+                class="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-white transition hover:bg-white/16"
+              >
+                Web
+              </a>
+              <a
+                href="/"
+                class="rounded-full border border-white/15 bg-white px-4 py-2 text-slate-900 transition hover:bg-emerald-50 print:hidden"
+              >
+                Volver a la home
+              </a>
+            </div>
+          </section>
+
+          <aside class="grid gap-px bg-slate-300 text-sm print:grid-cols-2 lg:grid-cols-1">
+            <div class="bg-[#f8f6f1] px-8 py-8 md:px-10">
+              <div class="text-xs uppercase tracking-[0.22em] text-slate-500">Contacto</div>
+              <div class="mt-4 space-y-3 leading-7">
+                <p>{profile.location}</p>
+                <p>{profile.phone}</p>
+                <p><a href={`mailto:${profile.email}`} class="underline decoration-slate-300 underline-offset-4">{profile.email}</a></p>
+                <p><a href={profile.website} class="underline decoration-slate-300 underline-offset-4">{profile.website}</a></p>
+                <p><a href={profile.linkedin} class="underline decoration-slate-300 underline-offset-4">linkedin.com/in/juandarodriguez</a></p>
+              </div>
+            </div>
+            <div class="bg-[#f8f6f1] px-8 py-8 md:px-10">
+              <div class="text-xs uppercase tracking-[0.22em] text-slate-500">Perfil</div>
+              <ul class="mt-4 space-y-3 leading-7 text-slate-700">
+                {highlights.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main class="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] print:mt-4">
+        <section class="space-y-8">
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Experiencia</div>
+            <div class="mt-6 space-y-6">
+              {experience.map((item) => (
+                <article class="grid gap-3 border-b border-slate-200 pb-6 last:border-b-0 last:pb-0 md:grid-cols-[220px_1fr]">
+                  <div>
+                    <div class="text-sm font-semibold text-slate-900">{item.role}</div>
+                    <div class="mt-1 text-sm text-slate-600">{item.org}</div>
+                    <div class="mt-2 inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">
+                      {item.period}
+                    </div>
+                  </div>
+                  <p class="text-sm leading-7 text-slate-700 md:text-base">{item.detail}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Proyectos relevantes</div>
+            <div class="mt-6 grid gap-5 md:grid-cols-3">
+              {projects.map((project) => (
+                <article class="rounded-[1.4rem] border border-slate-200 bg-[#fbfaf7] p-5">
+                  <div class="text-[11px] uppercase tracking-[0.22em] text-emerald-800/70">
+                    {project.label}
+                  </div>
+                  <h2 class="mt-3 text-xl font-semibold">{project.name}</h2>
+                  <p class="mt-3 text-sm leading-7 text-slate-700">{project.text}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Formacion</div>
+            <div class="mt-6 space-y-5">
+              {training.map((item) => (
+                <article class="grid gap-2 border-b border-slate-200 pb-5 last:border-b-0 last:pb-0 md:grid-cols-[220px_1fr]">
+                  <div class="text-sm text-slate-600">{item.period}</div>
+                  <div>
+                    <h3 class="text-base font-semibold text-slate-900">{item.title}</h3>
+                    <p class="mt-1 text-sm leading-7 text-slate-700">{item.org}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        </section>
+
+        <section class="space-y-8">
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Competencias</div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              {skills.map((skill) => (
+                <span class="rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-sm text-slate-700">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Desarrollo y DevOps</div>
+            <div class="mt-5 text-sm leading-7 text-slate-700">
+              <ul class="space-y-3">
+                {engineeringProfile.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Formacion impartida</div>
+            <div class="mt-5 text-sm leading-7 text-slate-700">
+              <ul class="space-y-3">
+                {trainingHighlights.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Certificaciones e idiomas</div>
+            <div class="mt-5 space-y-5 text-sm leading-7 text-slate-700">
+              <ul class="space-y-3">
+                {certifications.map((item) => (
+                  <li>
+                    <span class="font-medium text-slate-900">{item.title}</span>
+                    <span>{` - ${item.meta}`}</span>
+                  </li>
+                ))}
+              </ul>
+              <ul class="space-y-3">
+                {languages.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Publicaciones</div>
+            <div class="mt-5 space-y-4 text-sm leading-7 text-slate-700">
+              <ul class="space-y-3">
+                {publications.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          </section>
+
+          <section class="rounded-[1.75rem] border border-slate-300 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] print:rounded-none print:border-0 print:shadow-none">
+            <div class="text-xs uppercase tracking-[0.24em] text-slate-500">Enlaces</div>
+            <div class="mt-5 space-y-3 text-sm leading-7 text-slate-700">
+              <p><a href={profile.website} class="underline decoration-slate-300 underline-offset-4">juandarodriguez.es</a></p>
+              <p><a href={profile.linkedin} class="underline decoration-slate-300 underline-offset-4">LinkedIn</a></p>
+              <p><a href={profile.github} class="underline decoration-slate-300 underline-offset-4">GitHub</a></p>
+              <p><a href={profile.researchgate} class="underline decoration-slate-300 underline-offset-4">ResearchGate</a></p>
+              <p><a href="https://learningml.org" class="underline decoration-slate-300 underline-offset-4">LearningML</a></p>
+              <p><a href="https://echidna.es" class="underline decoration-slate-300 underline-offset-4">Echidna Educacion</a></p>
+              <p><a href={profile.projects} class="underline decoration-slate-300 underline-offset-4">Desarrollos</a></p>
+              <p><a href={profile.courses} class="underline decoration-slate-300 underline-offset-4">Cursos</a></p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
